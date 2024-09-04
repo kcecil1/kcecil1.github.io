@@ -1,8 +1,15 @@
+/* Ensures responsiveness and proper color scheme handling */
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
 }
 
 header {
@@ -35,18 +42,23 @@ p {
     margin-bottom: 1em;
     line-height: 1.6;
     text-align: justify;
-    color: #f4f4f4; /*I can adjust this color if needed*/
+    color: #f4f4f4; /* Light text for paragraphs */
 }
 
 section {
-    background-color: #333;
+    background-color: #333; /* Ensures the section has a dark background */
     padding: 20px;
     border-radius: 5px;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #f4f4f4; /* Matching the text color for headings */
+    color: #f4f4f4; /* Matching text color for headings */
+}
+
+.content {
+    background-color: #333333; /* Dark content background */
+    color: #FFFFFF; /* White text */
 }
 
 footer {
@@ -56,4 +68,32 @@ footer {
     padding: 10px 0;
     bottom: 0;
     width: 100%;
+}
+
+/* Force color scheme handling in Chrome */
+html {
+    background-color: #333; /* Ensures the background stays dark */
+    color: #fff; /* Ensures the text stays white */
+}
+
+/* Commented out media queries to test behavior without prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: #FFFFFF; 
+        color: #000000; 
+    }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333333; 
+        color: #FFFFFF; 
+    }
+} 
+
+/* Force consistent text and background colors across browsers */
+* {
+    background-color: #333;
+    color: #fff;
 }
