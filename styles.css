@@ -1,15 +1,11 @@
-/* Ensures responsiveness and proper color scheme handling */
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="color-scheme" content="light dark">
-
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #333; /* Dark background */
-    color: #fff; /* White text */
+    background-color: #2c2c2c; /* Slightly lighter dark background */
+    color: #e0e0e0; /* Softer white text */
 }
 
 header {
@@ -42,23 +38,28 @@ p {
     margin-bottom: 1em;
     line-height: 1.6;
     text-align: justify;
-    color: #f4f4f4; /* Light text for paragraphs */
+    color: #dcdcdc; /* Slightly lighter text color for paragraphs */
 }
 
 section {
-    background-color: #333; /* Ensures the section has a dark background */
+    background-color: #3a3a3a; /* Slightly lighter dark background for sections */
     padding: 20px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #f4f4f4; /* Matching text color for headings */
+    color: #ffffff; /* White text for headings */
+    border-bottom: 2px solid #4f4f4f; /* Add subtle bottom border */
+    padding-bottom: 10px;
 }
 
 .content {
-    background-color: #333333; /* Dark content background */
-    color: #FFFFFF; /* White text */
+    background-color: #3a3a3a; /* Consistent background color for content */
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
 }
 
 footer {
@@ -68,32 +69,38 @@ footer {
     padding: 10px 0;
     bottom: 0;
     width: 100%;
+    margin-top: 20px;
+}
+
+/* Add padding to the section to separate from the edges */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Adjust nav links for better spacing */
+nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
 }
 
 /* Force color scheme handling in Chrome */
 html {
-    background-color: #333; /* Ensures the background stays dark */
-    color: #fff; /* Ensures the text stays white */
+    background-color: #2c2c2c; /* Ensure the background stays consistent */
+    color: #e0e0e0; /* Ensure the text color is consistent */
 }
 
-/* Commented out media queries to test behavior without prefers-color-scheme */
+/* Optional: If using prefers-color-scheme */
 @media (prefers-color-scheme: light) {
     body {
-        background-color: #FFFFFF; 
-        color: #000000; 
+        background-color: #f4f4f4; /* Light background */
+        color: #333; /* Dark text */
     }
 }
-
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-color: #333333; 
-        color: #FFFFFF; 
+        background-color: #2c2c2c; /* Dark background */
+        color: #e0e0e0; /* Light text */
     }
-} 
-
-/* Force consistent text and background colors across browsers */
-* {
-    background-color: #333;
-    color: #fff;
 }
