@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #2c2c2c; /* Slightly lighter dark background */
-    color: #e0e0e0; /* Softer white text */
+    background-color: #fff;
+    color: #000;
 }
 
 header {
@@ -38,7 +38,7 @@ p {
     margin-bottom: 1em;
     line-height: 1.6;
     text-align: justify;
-    color: #dcdcdc; /* Slightly lighter text color for paragraphs */
+    color: #000; /* Slightly lighter text color for paragraphs */
 }
 
 section {
@@ -50,7 +50,7 @@ section {
 
 h2 {
     margin-bottom: 20px;
-    color: #ffffff; /* White text for headings */
+    color: #000; /* White text for headings */
     border-bottom: 2px solid #4f4f4f; /* Add subtle bottom border */
     padding-bottom: 10px;
 }
@@ -90,17 +90,4 @@ html {
     color: #e0e0e0; /* Ensure the text color is consistent */
 }
 
-/* Optional: If using prefers-color-scheme */
-@media (prefers-color-scheme: light) {
-    body {
-        background-color: #f4f4f4; /* Light background */
-        color: #333; /* Dark text */
-    }
-}
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #2c2c2c; /* Dark background */
-        color: #e0e0e0; /* Light text */
-    }
-}
