@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #fff;
-    color: #000;
+    background-color: #333;
+    color: #fff;
 }
 
 header {
@@ -38,7 +38,7 @@ p {
     margin-bottom: 1em;
     line-height: 1.6;
     text-align: justify;
-    color: #000; /* Slightly lighter text color for paragraphs */
+    color: #fff; /* Slightly lighter text color for paragraphs */
 }
 
 section {
@@ -50,7 +50,7 @@ section {
 
 h2 {
     margin-bottom: 20px;
-    color: #000; /* White text for headings */
+    color: #fff; /* White text for headings */
     border-bottom: 2px solid #4f4f4f; /* Add subtle bottom border */
     padding-bottom: 10px;
 }
